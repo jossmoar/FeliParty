@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Estilos base provisionales — el diseño final se define con el cliente. */
+body {
+  font-family: system-ui, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+@layer components {
+  .input {
+    @apply w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-gray-900;
+  }
+  .btn {
+    @apply rounded-xl bg-gray-900 px-5 py-3 font-medium text-white transition disabled:opacity-50;
+  }
+  .btn-outline {
+    @apply border border-gray-900 bg-white text-gray-900;
+  }
+}
